@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>VoteApplicaatinForm</title>
+        <style>
+            #centerhead{
+                background-color:rgb(233, 199, 155);
+                font-family:Times New Roman;
+            }
+            center{
+                background-color:antiquewhite;
+            }
+            p{
+            font-family:Lucida Handwriting;
+            font-size:35;
+
+        }
+        .title{
+            background-color:rgba(14, 226, 120, 0.651);
+            width:auto;
+            height:50px;
+            text-align:center;
+            }
+        legend{
+            background-color: rgba(223, 247, 11, 0.438);
+            
+        }
+        legend:hover{
+            background-color:rgba(16, 141, 243, 0.418);
+        }
+        </style>
+        <script>
+            function alertover()
+            {
+                alert("Fill the form Carefully without any mistakes because once submitted cannot be modified.");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="title"><p>Voter ID Application Form</p></div> 
+        <fieldset>     
+     <legend onmousedown="alertover();"><b>Applicant Details</b></legend> 
+     <center id="centerhead">INDIAN VOTER'S ID APPLICATION FORM</center>
+        <form name="ApplicationForm">
+            <center>
+            <table>
+                
+                <tr><td>Name:</td><td><input type="text" required></td></tr>
+                <tr><td>Gender:</td><td><input type="radio" name="gender" value="male" required>Male
+                    <input type="radio" name="gender" value="Female" required>Female
+                    <input type="radio" name="gender" value="Transgender" required>Transgender<input type="radio" name="gender" value="others" required>others
+                </td></tr>
+                <tr><td>Date of Birth:</td><td><input type="date" required></td></tr>
+                <tr><td>State:</td><td><input list="state" required><datalist id="state"><option value="Tamil Nadu"></option>
+                    <option value="Kerala"></option>
+                    <option value="Gujarath"></option>
+                    <option value="Karnataka"></option>
+                    <option value="Andhrapradesh"></option>
+                    <option value="Telungana"></option>
+                    <option value="punjab"></option>
+                </datalist></td></tr>
+                <tr><td>District:</td><td><input list="district" required><datalist id="district"><option value="Chennai"></option>
+                    <option value="vellore"></option>
+                    <option value="kanchipuram"></option>
+                    <option value="Thirvanamalai"></option>
+                    <option value="Madurai"></option>
+                    <option value="Tirunelveli"></option>
+                    <option value="Krishnagiri"></option>
+                    <option value="Salem"></option>
+                    <option value="Coimbatore"></option>
+                </datalist></td></tr>
+                <tr><td>Zone:</td><td><input list="zone" required><datalist id="zone">
+                    <option value="Anaikattu"></option>
+                    <option value="vellore"></option>
+                    <option value="KV Kuppan"></option>
+                    <option value="Katpadi"></option>
+                </datalist></td></tr>
+                <tr><td>Aadhar Number:</td><td><input type="text" maxlength="12" required></td></tr>
+                <tr><td><br></td></tr>
+                <tr><td><input type="reset" value="Reset"></td><td><input type="submit" value="Submit"</td>
+            </table>
+        </form>
+        </center>
+    </fieldset>
+
+    </body>
+</html>
